@@ -13,7 +13,7 @@
         </p>
       </div>
     </section>
-    <section>
+    <section class="section__one">
       <div>
         <h2>Origins of November</h2>
         <p>
@@ -104,5 +104,25 @@ main {
 
 .hero__credit {
   color: var(--text-high-contrast);
+}
+
+.hero__credit a:link {
+  color: var(--text-anchor);
+}
+
+.hero__credit a:visited {
+  color: var(--text-anchor-visited);
+}
+
+.hero__credit a:hover {
+  color: var(--text-anchor-hover);
+}
+
+.hero__credit a:active {
+  color: var(--text-anchor-active);
+}
+
+.section__one {
+  padding: 1rem;
 }
 </style>

@@ -121,6 +121,11 @@
         --text-brand: var(--clr-red-500);
         --text-brand-dark: var(--clr-red-600);
         --text-high-contrast: var(--clr-white);
+        --text-anchor:var(--clr-orange-400);
+        --text-anchor-visited: var(--clr-red-500);
+        --text-anchor-hover:var(--clr-red-600);
+        --text-anchor-active:var(--clr-red-500);
+
 
         --background-dark: var(--clr-red-500);
         --background-main: var(--clr-orange-300);
