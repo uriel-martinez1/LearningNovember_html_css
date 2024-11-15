@@ -1,0 +1,157 @@
+/* This is hwhere the styling will live */
+
+@layer reset {
+
+    /* We first need to reset our CSS */
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    /* https://kilianvalkhof.com/2022/css-html/your-css-reset-needs-text-size-adjust-probably/ */
+    html {
+        -moz-text-size-adjust: none;
+        -webkit-text-size-adjust: none;
+        text-size-adjust: none;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    figure,
+    blockquote,
+    dl,
+    dd {
+        margin: 0;
+    }
+
+    /* https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html */
+    [role="list"] {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        min-block-size: 100vh;
+        line-height: 1.6;
+    }
+
+    h1,
+    h2,
+    h3,
+    button,
+    input,
+    label {
+        line-height: 1.1;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        text-wrap: balance;
+    }
+
+    /* This prevents orphans word in large block of text */
+    p,
+    li {
+        text-wrap: pretty;
+    }
+
+    img,
+    picture {
+        /* inline axis? Left to right direction */
+        max-inline-size: 100%;
+        display: block;
+    }
+
+    input,
+    button,
+    textarea,
+    select {
+        font: inherit;
+    }
+}
+
+@layer base {
+    :root {
+        /* Colors here */
+        --clr-red-500: #d54215;
+        --clr-red-600: #c0360c;
+        --clr-orange-300: #ffb84d;
+        --clr-orange-400: #ff9900;
+        --clr-orange-500: #f57a00;
+        --clr-white: #FFFFFF;
+        --clr-black: #000000;
+
+        /* Font goes here */
+        --ff-heading: "Open Sans", sans-serif;
+        --ff-sub-heading: "Barlow", sans-serif;
+        --ff-body: "PT Sans", serif;
+
+        /* Font sizes */
+        --fs-300: 0.875rem;
+        --fs-400: 1rem;
+        --fs-500: 1.125rem;
+        --fs-600: 1.25rem;
+        --fs-700: 1.5rem;
+        --fs-800: 2rem;
+        --fs-900: 3.75rem;
+        --fs-1000: 3.75rem;
+
+        @media (width > 760px){
+            /* Text gets slightly bigger when the screen gets bigger */
+            --fs-500: 1.25rem;
+            --fs-600: 1.5rem;
+            --fs-700: 2rem;
+            --fs-800: 3rem;
+            --fs-900: 5rem;
+            --fs-1000: 7.5rem;
+        }
+    }
+
+    /* This is where we actually assign the different text options for color and size */
+    :root {
+        --text-main: var(--clr-black);
+        --text-brand: var(--clr-red-500);
+        --text-brand-dark: var(--clr-red-600);
+        --text-high-contrast: var(--clr-white);
+
+        --background-dark: var(--clr-red-500);
+        --background-main: var(--clr-orange-300);
+
+        --font-size-heading-regular: var(--fs-800);
+
+        --font-size-regular:var(--fs-400);
+    }
+
+    html {
+        font-family: var(--ff-body);
+        line-height: 1.6;
+    }
+
+    body {
+        font-size: var(--font-size-regular);
+        color: var(--text-main);
+    }
+
+    h1 {
+        font-family: var(--ff-heading);
+    }
+
+    h2,
+    h3,
+    h4 {
+        font-family: var(--ff-sub-heading);
+    }
+
+    h1 {
+        font-size: var(--font-size-heading-regular);
+        font-weight: 700;
+    }
+}
