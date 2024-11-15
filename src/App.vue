@@ -19,8 +19,4 @@
 
 <style>
 
-body {
-  background-color: var(--clr-jack-o-latern);
-}
-
 </style>

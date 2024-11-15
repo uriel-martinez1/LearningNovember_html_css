@@ -125,6 +125,7 @@
         --background-dark: var(--clr-red-500);
         --background-main: var(--clr-orange-300);
 
+        --font-size-heading-sm: var(--fs-700);
         --font-size-heading-regular: var(--fs-800);
 
         --font-size-regular:var(--fs-400);
