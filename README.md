@@ -1,6 +1,6 @@
-# vue-app
+# November webpage
 
-This template should help get you started developing with Vue 3 in Vite.
+This is a project where I am taking the concepts that I learned from Kevin Powell's Build a Website from Scratch workshop hosted by Frontend Masters.
 
 ## Recommended IDE Setup
 
